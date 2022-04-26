@@ -20,7 +20,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStatusApi.DAL", "..\
 		{917349B8-8098-41BD-A7F6-4828B4746B55} = {917349B8-8098-41BD-A7F6-4828B4746B55}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStatusApi-Model", "..\WeatherStatusApi-Model\WeatherStatusApi-Model.csproj", "{917349B8-8098-41BD-A7F6-4828B4746B55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStatusApi.Model", "..\WeatherStatusApi-Model\WeatherStatusApi.Model.csproj", "{917349B8-8098-41BD-A7F6-4828B4746B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serelization", "..\..\..\..\..\..\..\a\Tech-Accidents\Serelization\Serelization.csproj", "{832F3D0F-F5A9-47A5-8E70-7250502A6C1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{917349B8-8098-41BD-A7F6-4828B4746B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{917349B8-8098-41BD-A7F6-4828B4746B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{917349B8-8098-41BD-A7F6-4828B4746B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{832F3D0F-F5A9-47A5-8E70-7250502A6C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{832F3D0F-F5A9-47A5-8E70-7250502A6C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{832F3D0F-F5A9-47A5-8E70-7250502A6C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{832F3D0F-F5A9-47A5-8E70-7250502A6C1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

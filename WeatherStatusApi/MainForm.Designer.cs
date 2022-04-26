@@ -30,7 +30,7 @@
         {
             this.Start_btn = new System.Windows.Forms.Button();
             this.stop_btn = new System.Windows.Forms.Button();
-            this.get_btn = new System.Windows.Forms.Button();
+            this.getTempFromFile_btn = new System.Windows.Forms.Button();
             this.City_textBox = new System.Windows.Forms.TextBox();
             this.RefRet_textBox = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -72,19 +72,19 @@
             this.stop_btn.UseVisualStyleBackColor = false;
             this.stop_btn.Click += new System.EventHandler(this.stop_btn_Click);
             // 
-            // get_btn
+            // getTempFromFile_btn
             // 
-            this.get_btn.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.get_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.get_btn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.get_btn.Font = new System.Drawing.Font("Narkisim", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.get_btn.Location = new System.Drawing.Point(34, 445);
-            this.get_btn.Name = "get_btn";
-            this.get_btn.Size = new System.Drawing.Size(263, 140);
-            this.get_btn.TabIndex = 2;
-            this.get_btn.Text = "Get Current Temperature From File";
-            this.get_btn.UseVisualStyleBackColor = false;
-            this.get_btn.Click += new System.EventHandler(this.button3_Click);
+            this.getTempFromFile_btn.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.getTempFromFile_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.getTempFromFile_btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.getTempFromFile_btn.Font = new System.Drawing.Font("Narkisim", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.getTempFromFile_btn.Location = new System.Drawing.Point(34, 441);
+            this.getTempFromFile_btn.Name = "getTempFromFile_btn";
+            this.getTempFromFile_btn.Size = new System.Drawing.Size(263, 140);
+            this.getTempFromFile_btn.TabIndex = 2;
+            this.getTempFromFile_btn.Text = "Get Current Temperature From File";
+            this.getTempFromFile_btn.UseVisualStyleBackColor = false;
+            this.getTempFromFile_btn.Click += new System.EventHandler(this.getTempFromFile_btn_Click);
             // 
             // City_textBox
             // 
@@ -201,7 +201,7 @@
             this.TempOutput_Tb.ReadOnly = true;
             this.TempOutput_Tb.Size = new System.Drawing.Size(321, 26);
             this.TempOutput_Tb.TabIndex = 12;
-          
+            this.TempOutput_Tb.TextChanged += new System.EventHandler(this.TempOutput_Tb_TextChanged);
             // 
             // CityInput_Tb
             // 
@@ -215,6 +215,7 @@
             this.CityInput_Tb.TabIndex = 13;
             this.CityInput_Tb.Tag = "";
             this.CityInput_Tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CityInput_Tb.TextChanged += new System.EventHandler(this.CityInput_Tb_TextChanged);
             // 
             // MainForm
             // 
@@ -232,7 +233,7 @@
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.RefRet_textBox);
             this.Controls.Add(this.City_textBox);
-            this.Controls.Add(this.get_btn);
+            this.Controls.Add(this.getTempFromFile_btn);
             this.Controls.Add(this.stop_btn);
             this.Controls.Add(this.Start_btn);
             this.Name = "MainForm";
@@ -248,7 +249,7 @@
 
         private System.Windows.Forms.Button Start_btn;
         private System.Windows.Forms.Button stop_btn;
-        private System.Windows.Forms.Button get_btn;
+        private System.Windows.Forms.Button getTempFromFile_btn;
         private System.Windows.Forms.TextBox RefRet_textBox;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ProgressBar progressBar1;

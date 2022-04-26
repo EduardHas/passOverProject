@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-// /////https://api.weatherapi.com/v1/current.json?key=b480e7a490374b44be472511222103&q=JERUSALEM&aqi=no%22
+
 namespace WeatherStatusApi.DAL
 {
     public class APICityRequest

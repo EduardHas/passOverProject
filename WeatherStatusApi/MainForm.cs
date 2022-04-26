@@ -18,15 +18,21 @@ namespace WeatherStatusApi
             InitializeComponent();
         }
 
-        private void Start_btn_Click(object sender, EventArgs e)
+        private async void Start_btn_Click(object sender, EventArgs e)
         {
-            Request.GetCity(TempOutput_Tb.Text);
-            TempOutput_Tb.Text = "12.9";
+            var cityName = CityInput_Tb.Text;
+            float cityTemp =await Request.GetCity(cityName);
+            TempOutput_Tb.Text = cityTemp.ToString();
+            
+
         }
 
 
-        private void button3_Click(object sender, EventArgs e)
+        private  void getTempFromFile_btn_Click(object sender, EventArgs e)
         {
+            var cityName = CityInput_Tb.Text;
+            float cityTemp = Request.GetCityTempFromFile(cityName);
+            TempOutput_Tb.Text = cityTemp.ToString();
 
         }
         private void AddTolList_btn_Click(object sender, EventArgs e)
@@ -53,6 +59,14 @@ namespace WeatherStatusApi
 
         }
 
-     
+        private void CityInput_Tb_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void TempOutput_Tb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
